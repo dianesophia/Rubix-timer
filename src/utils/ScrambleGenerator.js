@@ -51,8 +51,8 @@ function generateMegaminxScramble() {
   return scramble.join('\n');
 }
 
-export function generateScramble(cubeType) {
-    switch (cubeType) {
+export function generateScramble(CUBE_TYPES) {
+    switch (CUBE_TYPES) {
         case '2x2': 
             return generateStandardScramble(MOVES_2x2, 9);
         case '3x3': 
